@@ -5,8 +5,8 @@ from .models import Todo
 
 
 def index(request):
+    todo = Todo.objects.all()
     if request.method == 'POST':
-        todo = Todo.objects.all()
         new_todo = Todo(title=request.POST['title'])
         new_todo.save()
         return redirect('/')
