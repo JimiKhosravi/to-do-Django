@@ -1,0 +1,1 @@
+This is a to do list app written by Django. The user can add and then delete tasks.
